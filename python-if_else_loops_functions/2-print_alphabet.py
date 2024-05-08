@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print("".join([chr(ascii_value) for ascii_value in range(97, 123)]), end='')
+print('{}'.format(''.join(chr(i) for i in range(97, 123))), end='')
