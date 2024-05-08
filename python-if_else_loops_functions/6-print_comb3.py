@@ -7,3 +7,4 @@ for e in range(0, 10):
             print("{}{}".format(e, a))
         else:
             print("{}{}, ".format(e, a), end="")
+       
