@@ -23,11 +23,11 @@ Raises:
       
     if isinstance(a, float):
         a = int(a)
-    elif not isinstance(a, int):
+    elif not isinstance(a, (int, float)):
         raise TypeError('a must be an integer')
 
     if isinstance(b, float):
         b = int(b)
-    elif not isinstance(b, int):
+    elif not isinstance(b, (int, float)):
         raise TypeError('b must be an integer')
     return a + b
