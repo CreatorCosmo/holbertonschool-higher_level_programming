@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+
+>>> import sys
+>>> sys.path.append('E:\Programming\Python_Holberton2\holbertonschool-higher_level_programming\python-test_driven_development\0-add_integer.py')
+>>> from importlib import import_module
+>>> add_integer = import_module('0-add_integer').add_integer
+
+>>> add_integer(10, 20)
+30
+>>> add_integer(11.5, 21.5)
+32
+>>> add_integer(-12, 22.8)
+10
+>>> add_integer('a', 20)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(10, 'b')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+    
