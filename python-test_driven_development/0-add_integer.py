@@ -21,6 +21,7 @@ Raises:
 
     """
       
+      
     if isinstance(a, float):
         a = int(a)
     elif not isinstance(a, (int, float)):
