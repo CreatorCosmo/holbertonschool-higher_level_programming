@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+"""
+This module provides a function add_integer that adds two integers.
 
+The function takes two parameters, 'a' and 'b'. Both parameters must be
+either integers or floats. If they are floats, they will be converted
+to integers before addition. The function is designed to handle type
+errors and ensures that the inputs provided are of valid types.
+"""
 def add_integer(a, b=98):
     """
-Adds two integers or floats after converting them to integers.
-
 Args:
     a (int or float): The first number to add. Must be an integer or a float. If its a float, it will be converted to an integer.
     b (int or float, optional): The second number to add, defaulting to 98. Must be an integer or float. If its a float, it will be converted to an integer.
@@ -13,22 +18,7 @@ Returns:
 
 Raises:
     TypeError: If either a or b is not an integer or float convertible to an integer.
-    
-    Examples:
-        >>> add_integer(10, 20)
-        30
-        >>> add_integer(11.5, 21.5)
-        32
-        >>> add_integer(-12, 22.8)
-        10
-        >>> add_integer('a', 20)
-        Traceback (most recent call last):
-        ...
-        TypeError: a must be an integer
-        >>> add_integer(10, 'b')
-        Traceback (most recent call last):
-        ...
-        TypeError: b must be an integer
+
     """
       
     if isinstance(a, float):

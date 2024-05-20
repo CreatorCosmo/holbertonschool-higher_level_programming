@@ -1,4 +1,13 @@
-#!/usr/bin/python3
+    """
+
+This module provides a function add_integer that adds two integers.
+
+The function takes two parameters, 'a' and 'b'. Both parameters must be
+either integers or floats. If they are floats, they will be converted
+to integers before addition. The function is designed to handle type
+errors and ensures that the inputs provided are of valid types.
+
+    """
 
 >>> import sys
 >>> sys.path.append('E:\Programming\Python_Holberton2\holbertonschool-higher_level_programming\python-test_driven_development\0-add_integer.py')
@@ -19,4 +28,3 @@ TypeError: a must be an integer
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
-    
