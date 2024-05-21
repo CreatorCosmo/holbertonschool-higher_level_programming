@@ -6,8 +6,8 @@
 class Rectangle:
     """ Class that is defining Rectangle """
 
-    "Private instance for width"
     def __init__(self, width=0, height=0):
+        "Initiation for rectangle"
         self.width = width
         self.height = height
 
@@ -27,7 +27,7 @@ class Rectangle:
         else:
             self.__width = value
     
-    
+    @property
     def height(self):
         "Property to retrieve height"
         return self.__height
