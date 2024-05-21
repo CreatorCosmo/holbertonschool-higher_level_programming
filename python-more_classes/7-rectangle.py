@@ -59,7 +59,7 @@ class Rectangle:
         rect = ""
         if self.height == 0 or self.width == 0:
             return ""
-        size = "#" * self.__width
+        size = str(self.print_symbol) * self.__width
         rect = []
         
         for index in range(self.__height):
@@ -68,10 +68,10 @@ class Rectangle:
     
     def __repr__(self):
         " Returns representation of the rectangle "
-        return"{}({}, {})".format((type(self).__name__), self.__width,
+        return"{:s}({:d}, {:d})".format((type(self).__name__), self.__width,
                                   self.__height)
     
     def __del__(self):
-        "Deletes instance and prints message"
+        "Deletes instance and decreases instance count"
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
