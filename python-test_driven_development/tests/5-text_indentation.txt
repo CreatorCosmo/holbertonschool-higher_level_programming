@@ -1,0 +1,30 @@
+"""
+Test cases for the text_indentation function.
+"""
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello. How are you? Fine, thank you.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+Fine, thank you.
+<BLANKLINE>
+
+>>> text_indentation("Spaces here:   are skipped.")
+Spaces here:
+<BLANKLINE>
+are skipped.
+<BLANKLINE>
+
+# Testing without punctuation
+>>> text_indentation("No punctuation")
+No punctuation
+<BLANKLINE>
+
+# Testing incorrect input type
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
