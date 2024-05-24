@@ -8,6 +8,7 @@ class Shape(ABC):
     This class should not be instantiated directly but instead used to enforce
     the implementation of the area and perimeter methods in subclasses.
     """
+
     @abstractmethod
     def area(self):
         """
@@ -39,7 +40,16 @@ class Circle(Shape):
         Parameters:
         radius (float): The radius of the circle.
         """
-        self.radius = radius
+    if radius < 0:
+            raise ValueError("Radius cannot be negative")
+    self.radius = radius
+    
+    def area(self):
+        return math.pi * self.radius ** 2
+
+    def perimeter(self):
+        return 2 * math.pi * self.radius
+
 
     def area(self):
         """
