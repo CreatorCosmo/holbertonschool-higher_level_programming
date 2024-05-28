@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """This module contain a function called append_write"""
 
 
