@@ -1,5 +1,14 @@
 #!/usr/bin/python3
-"""This module add item(object) to a json file"""
+#!/usr/bin/python3
+"""
+This module adds items (objects) from
+command line arguments to a JSON file
+'add_item.json'. If the file 
+does not exist, it creates it.
+If it does exist, it appends 
+new items to it.
+"""
+
 
 
 import sys
