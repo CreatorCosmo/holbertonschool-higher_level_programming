@@ -2,6 +2,7 @@
 """ Module for connecting to databse and selecting table """
 
 
+
 from sys import argv
 from MySQLdb import connect
 
@@ -26,4 +27,3 @@ if __name__ == "__main__":
 
     cursor.close()
     db.close()
-    
