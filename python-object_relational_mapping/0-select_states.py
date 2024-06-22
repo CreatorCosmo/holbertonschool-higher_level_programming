@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """ Module for connecting to databse and selecting table """
 
-
-
 from sys import argv
 from MySQLdb import connect
 
